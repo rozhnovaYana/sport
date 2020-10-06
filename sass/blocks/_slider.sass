@@ -26,17 +26,18 @@
 
 .slider
     padding: 81px 0
+    position: relative
+    &__wrapper
+        display: flex
+
     &__block
         position: relative
         display: block
         margin: 0 auto
-        max-width: 750px
+        width: 750px
         height: 527px
-    &__img
-        position: absolute 
-        display: none
-        width: 100%
-        
+        overflow: hidden
+
     &__arrow
         max-width: 31px
         height: 50px
@@ -47,36 +48,19 @@
             left: -66px
         &_right
             right: -66px
-    &__active
-        display: block
-        transition: 0.5s, all
     &__dots
-        display: none
         position: absolute
-        bottom: -40px
+        bottom: 0px
         left: 50%
         transform: translateX(-50%)
+        display: flex
     &__dot
-        display: block
-        width: 20px
-        height: 20px
-        border-radius: 50%
+        width: 30px
+        height: 10px
         border: 2px solid #202020
         box-shadow: 0px 2px 5px #202020
         margin: 0 10px
+        opacity: 0.5
+        background: #494949
         &_active
             background: #202020
-
-
-        
-            
-            
-
-          
-                    
-    
-
-   
-        
-
-
